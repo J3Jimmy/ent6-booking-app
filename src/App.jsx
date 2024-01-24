@@ -12,10 +12,10 @@ function App() {
    <div>
     <h1>booking app</h1>
     <Routes>
-      <Route path='/' element={HomePage} />
-      <Route path='/register' element={RegisterPage} />
-      <Route path='/login' element={LoginPage} />
-      <Route path='*' element={<dispatchUnknownPages />} />
+      <Route path='/' element={<HomePage/>} />
+      <Route path='/register' element={<RegisterPage />}  />
+      <Route path='/login' element={<LoginPage/>} />
+      <Route path='*' element={<UnknownPages />} />
     </Routes>
    </div>
   )

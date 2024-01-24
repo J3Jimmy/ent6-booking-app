@@ -1,11 +1,11 @@
 import HotelCard from "./HotelCard"
 
 
-const ListHotels = (hotels) => {
+const ListHotels = ({hotels}) => {
   return (
     <div>
       {
-        hotels?.results(hotel => (
+        hotels?.results.map(hotel => (
           <HotelCard
           key={hotel.id}
           hotel={hotel}
