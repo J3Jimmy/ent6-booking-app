@@ -1,0 +1,47 @@
+.container__register {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.register {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center; 
+  margin: 0 auto; 
+}
+
+.form__register {
+  width: 500px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gender {
+  margin-bottom: 10px;
+}
+
+.button__register:hover {
+  background-color: #333;
+}
