@@ -15,7 +15,6 @@ const HomePage = () => {
     
   }, [])
   
-  console.log(hotels)
 
   return (
     <div>

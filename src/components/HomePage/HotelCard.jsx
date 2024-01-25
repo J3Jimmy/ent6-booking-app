@@ -1,10 +1,27 @@
-import React from 'react'
+import { useNavigate } from "react-router-dom"
 
 const HotelCard = ( {hotel} ) => {
+
+  const navigate = useNavigate()
+
+  const handleNavigate = () => {
+    navigate(`/hotel/${hotel.id}`)
+  }
+
   return (
-    <div>
-      HotelCard
-    </div>
+    <article>
+      <header>
+        <img src={hotel.images[0].url} alt="" />
+      </header>
+      <section>
+        <h3>{hotel.name}</h3>
+        <span>rating</span>
+        <p>{hotel.city.name}, {hotel.city.country}</p>
+        <div>{hotel.price}</div>
+      </section>
+      <button onClick={handleNavigate}>See More...</button>
+    </article>
+    
   )
 }
 
