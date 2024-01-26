@@ -1,12 +1,21 @@
 import { useForm } from "react-hook-form"
 import './styles/RegisterPage.css'
+import useAuth from "../hooks/useAuth"
 
 const RegisterPage = () => {
 
   const { handleSubmit,reset, register } = useForm()
+
+  const { createNewUser } =  useAuth()
   
   const submit = data => {
-
+    createNewUser(data)
+    reset ({
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: ''
+      })
   }
 
   return (
