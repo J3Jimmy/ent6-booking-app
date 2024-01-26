@@ -9,9 +9,13 @@ const useAuth = () => {
     .catch(err => console.log(err))
   }
   const loginUser = (data) => {
-    const url = 'https://hotels-api.academlo.tech/login'
+    const url = 'https://hotels-api.academlo.tech/users/login'
     axios.post(url, data)
-  .then(res => console.log(res.data))
+  .then(res => {
+      console.log(res.data)
+      localStorage.setItem('token', res.data.token)
+      localStorage.setItem('user', JSON.stringify(res.data.user))
+  })
   .catch(err => console.log(err))
   }
 

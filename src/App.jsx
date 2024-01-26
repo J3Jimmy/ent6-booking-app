@@ -5,13 +5,14 @@ import RegisterPage from './pages/RegisterPage'
 import LoginPage from './pages/LoginPage'
 import UnknownPages from './pages/UnknownPages'
 import HotelIdPage from './pages/HotelIdPage'
+import HeaderShared from './components/shared/HeaderShared'
 
 function App() {
 
 
   return (
    <div>
-    <h1>Hotel App</h1>
+    <HeaderShared />
     <Routes>
       <Route path='/' element={<HomePage/>} />
       <Route path='/register' element={<RegisterPage />}  />
