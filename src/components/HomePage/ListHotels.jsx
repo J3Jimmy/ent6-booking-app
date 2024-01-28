@@ -5,12 +5,17 @@ const ListHotels = ({hotels}) => {
   return (
     <div>
       {
-        hotels?.results.map(hotel => (
+        !hotels || hotels?.length === 0
+        
+       ? <h2>No there hotels with this name 😢</h2>
+       :(
+        hotels?.map(hotel => (
           <HotelCard
           key={hotel.id}
           hotel={hotel}
            />
         ))
+       )
       }
     </div>
   )
