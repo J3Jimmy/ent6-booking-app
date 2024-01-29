@@ -14,6 +14,7 @@ const HomePage = () => {
   to: Infinity
 })
 
+
   const hotels = useSelector( states => states.hotels )
 
  const dispatch = useDispatch()
@@ -31,10 +32,8 @@ const HomePage = () => {
     const priceHotel = +hotelInfo.price
     const filterPrice =  fromTo.from <= priceHotel && priceHotel <= fromTo.to
 
-    //filter cities
-
-
-    return filterName && filterPrice
+    
+    return filterName && filterPrice 
   } )
 
 

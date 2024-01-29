@@ -1,47 +1,43 @@
-.container__register {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-}
-
-.register {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center; 
-  margin: 0 auto; 
+.register__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
 }
 
 .form__register {
-  width: 500px;
-  margin: 0 auto;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-select {
-  width: 100%;
+.input__register,
+.select__register,
+.button__register {
+  margin: 10px 0;
   padding: 10px;
+  width: 100%; /* Cambiar a un ancho fijo */
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box; /* Incluir el relleno y el borde en el ancho */
 }
 
-button {
-  background-color: #000;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
+
+
+.button__register {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
   cursor: pointer;
 }
 
-.gender {
-  margin-bottom: 10px;
-}
-
 .button__register:hover {
-  background-color: #333;
+  background-color: #45a049;
 }

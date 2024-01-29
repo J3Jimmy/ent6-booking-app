@@ -19,34 +19,34 @@ const RegisterPage = () => {
   }
 
   return (
-    <div>
+    <div className="register__container">
       <h2>Register</h2>
-      <form onSubmit={handleSubmit(submit)}>
+      <form onSubmit={handleSubmit(submit)} className="form__register">
         <label>
           <span>First Name</span>
-          <input {...register('firstName')} type="text" />
+          <input {...register('firstName')} type="text" className="input__register"/>
         </label>
         <label>
           <span>Last Name</span>
-          <input {...register('lastName')} type="text" />
+          <input {...register('lastName')} type="text" className="input__register"/>
         </label>
         <label>
           <span>Email</span>
-          <input {...register('email')} type="email" />
+          <input {...register('email')} type="email" className="input__register"/>
         </label>
         <label>
           <span>Password</span>
-          <input {...register('password')} type="password" />
+          <input {...register('password')} type="password" className="input__register"/>
         </label>
         <label>
           <span>Gender</span>
-          <select {...register('gender')}>
+          <select {...register('gender')} className="select__register">
             <option value="other">Prefer not say</option>
             <option value="female">Female</option>
             <option value="male">Male </option>
            </select>
           </label>
-          <button>Submit</button>
+          <button className="button__register">Submit</button>
       </form>
     </div>
   )

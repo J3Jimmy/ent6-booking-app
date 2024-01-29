@@ -12,8 +12,8 @@ const FilterName = ({setNameInput}) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input ref={inputSearch}type="text" />
-      <button>Search</button>
+      <input ref={inputSearch}type="text" className="input__filter__name"/>
+      <button className="search__filter__name">Search</button>
     </form>
   )
 }
