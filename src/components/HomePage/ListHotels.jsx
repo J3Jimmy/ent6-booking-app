@@ -1,9 +1,10 @@
 import HotelCard from "./HotelCard"
+import './styles/ListHotel.css'
 
 
 const ListHotels = ({hotels}) => {
   return (
-    <div>
+    <div className="card-container">
       {
         !hotels || hotels?.length === 0
         

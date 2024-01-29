@@ -3,7 +3,7 @@
   max-width: 300px;
   border-radius: 0.8em;
   overflow: hidden;
-  box-shadow: 0.1em 0.1em 1em #0005;
+  box-shadow: 0.1em 0.1em 1em #0005 ;
 }
 .card__header {
   width: 100%;
@@ -13,7 +13,7 @@
   width: 100%;
 }
 .card__body {
-  padding:0 1em 2em
+  padding: 0 1em 2em;
 }
 .card__name {
   font-size: 1.2rem;
@@ -42,20 +42,21 @@
   font-weight: 300;
 }
 .card__btn {
+  display: block;
   margin: 0.7em auto 0;
+  
   font-size: 1rem;
   font-weight: 500;
-  display: block;
   border: none;
   padding: 0.5em 0;
   width: 8em;
   background-color: #fa4006;
   color: white;
   border-radius: 0.5em;
-  transition: transform 100ms ease,
+  transition: transform 100ms ease
               box-shadow 100ms ease;
 }
 .card__btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 0.5em #0005;
+  box-shadow: 0 0 0.5em;
 }

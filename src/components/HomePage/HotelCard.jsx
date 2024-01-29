@@ -10,17 +10,17 @@ const HotelCard = ( {hotel} ) => {
   }
 
   return (
-    <article>
-      <header>
-        <img src={hotel.images[0].url} alt="" />
+    <article className="card">
+      <header className="card__header">
+        <img className="card__img" src={hotel.images[0].url} alt="" />
       </header>
-      <section>
-        <h3>{hotel.name}</h3>
-        <span>rating</span>
-        <p>{hotel.city.name}, {hotel.city.country}</p>
-        <div>{hotel.price}</div>
+      <section className="card__body">
+        <h3 className="card__name">{hotel.name}</h3>
+        <span className="card__rating">rating</span>
+        <p className="card__location">{hotel.city.name}, {hotel.city.country}</p>
+        <div className="card__price">{hotel.price}</div>
+      <button className="card__btn" onClick={handleNavigate}>See More...</button>
       </section>
-      <button onClick={handleNavigate}>See More...</button>
     </article>
     
   )
