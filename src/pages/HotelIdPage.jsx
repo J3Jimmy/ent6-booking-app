@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import { useEffect } from "react";
 import { Map, Marker, ZoomControl } from "pigeon-maps"
+import OtherHotels from "../components/HotelIdPage/OtherHotels";
+import ReservationsHotel from "../components/HotelIdPage/ReservationsHotel";
 
 const HotelIdPage = () => {
   const { id } = useParams();
@@ -48,6 +50,13 @@ const HotelIdPage = () => {
         </div>
         <p>{hotel?.description}</p>
       </div>
+      <ReservationsHotel 
+        hotelId={hotel?.id}
+        />
+      <OtherHotels 
+      cityId={hotel?.city.id}
+        hotelId={hotel?.id}
+      />
     </div>
   );
 };
