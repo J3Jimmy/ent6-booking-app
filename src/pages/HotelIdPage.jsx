@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { Map, Marker, ZoomControl } from "pigeon-maps"
 import OtherHotels from "../components/HotelIdPage/OtherHotels";
 import ReservationsHotel from "../components/HotelIdPage/ReservationsHotel";
+import SlidersImgs from "../components/HotelIdPage/SlidersImgs";
 
 const HotelIdPage = () => {
   const { id } = useParams();
@@ -22,9 +23,7 @@ const HotelIdPage = () => {
         <h2>{hotel?.name}</h2>
         <span>Rating</span>
       </header>
-      <div>
-        <img src={hotel?.images[0].url} alt="" />
-      </div>
+      <SlidersImgs hotel={hotel} />
       <div>
         {
       hotel && (
