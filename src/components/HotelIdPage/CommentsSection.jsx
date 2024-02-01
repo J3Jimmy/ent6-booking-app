@@ -14,11 +14,15 @@ const CommentsSection = ({ hotelId }) => {
 
   return (
     <div>
-      <div>comments sections</div>
+      
       <div>
         {
           reviews?.map(reviewInfo => (
-            <p key={reviewInfo.id}>{reviewInfo.comment}</p>
+            <div key={reviewInfo.id}>
+              <div>{reviewInfo.rating}⭐</div>
+              <div>{reviewInfo.createdAt}</div>
+            <p>{reviewInfo.comment}</p>
+            </div>
             ))
         }
       </div>
