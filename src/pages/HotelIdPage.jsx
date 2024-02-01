@@ -5,6 +5,7 @@ import { Map, Marker, ZoomControl } from "pigeon-maps"
 import OtherHotels from "../components/HotelIdPage/OtherHotels";
 import ReservationsHotel from "../components/HotelIdPage/ReservationsHotel";
 import SlidersImgs from "../components/HotelIdPage/SlidersImgs";
+import CommentsSection from "../components/HotelIdPage/CommentsSection";
 
 const HotelIdPage = () => {
   const { id } = useParams();
@@ -49,6 +50,9 @@ const HotelIdPage = () => {
         </div>
         <p>{hotel?.description}</p>
       </div>
+      <CommentsSection 
+      hotelId={hotel?.id}
+      />
       <ReservationsHotel 
         hotelId={hotel?.id}
         />

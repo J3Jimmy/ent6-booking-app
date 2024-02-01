@@ -1,0 +1,8 @@
+.reserve__rating {
+  color: blue;
+  cursor: pointer;
+}
+.reserve__rating:hover {
+  color: aqua;
+  text-decoration: underline;
+}
