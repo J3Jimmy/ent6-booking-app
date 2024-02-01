@@ -7,6 +7,7 @@ import UnknownPages from './pages/UnknownPages'
 import HotelIdPage from './pages/HotelIdPage'
 import HeaderShared from './components/shared/HeaderShared'
 import ReservationsPage from './pages/ReservationsPage'
+import ProtectedRoutes from './pages/ProtectedRoutes'
 
 function App() {
 
@@ -19,7 +20,9 @@ function App() {
       <Route path='/register' element={<RegisterPage />}  />
       <Route path='/login' element={<LoginPage/>} />
       <Route path='/hotel/:id' element={<HotelIdPage />} />
-      <Route path='/reservations' element={<ReservationsPage />} />
+      <Route element={<ProtectedRoutes />}>
+        <Route path='/reservations' element={<ReservationsPage />} />
+      </Route>
       <Route path='*' element={<UnknownPages />} />
     </Routes>
    </div>

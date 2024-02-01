@@ -22,7 +22,6 @@ const HotelIdPage = () => {
     <div>
       <header>
         <h2>{hotel?.name}</h2>
-        <span>Rating</span>
       </header>
       <SlidersImgs hotel={hotel} />
       <div>
